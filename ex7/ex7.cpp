@@ -8,7 +8,7 @@ void affiche(float x, int n = 0)
 
     if (n == 0)
     {
-        cout << "result = 1";
+        cout << "result = 1" << endl;
         return;
     }
     int i = 0;
@@ -18,7 +18,7 @@ void affiche(float x, int n = 0)
         result = result * x;
         i++;
     }
-    cout << "result = " << result;
+    cout << "result = " << result << endl;
 }
 
 void affiche(int n, float x = 0)
@@ -26,7 +26,7 @@ void affiche(int n, float x = 0)
 
     if (x == 0)
     {
-        cout << "result = 0";
+        cout << "result = 0" << endl;
         return;
     }
     int i = 0;
@@ -36,7 +36,7 @@ void affiche(int n, float x = 0)
         result = result * x;
         i++;
     }
-    cout << "result = " << result;
+    cout << "result = " << result << endl;
 }
 
 int main()
@@ -49,6 +49,6 @@ int main()
     x = 4.3;
     affiche(x, n);
     affiche(n, x);
-    getch();
+    // getch();
     return 0;
 }
