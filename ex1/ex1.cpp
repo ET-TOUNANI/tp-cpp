@@ -1,12 +1,14 @@
-#include <stdio.h>
 
+#include <iostream> // cin et cout sont definis dans iostream
+using namespace std;
 int main()
 {
     int n;
     float x;
 
-    printf("donnez un entier et un flottant \n");
-    scanf("%d %e ", &n, &x);
-    printf("le produit de %d par %e \n est %e \n ", n, x, n * x);
+    cout << "donnez un entier et un flottant \n"; // equivalent de printf
+    cin >> n;                                     // equivalent de scanf
+    cin >> x;
+    cout << "le produit de " << n << " par " << x << "\n est " << n * x << endl;
     return 0;
 }
