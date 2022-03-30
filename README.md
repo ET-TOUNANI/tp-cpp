@@ -5,7 +5,7 @@
 
     c++ en tant que language de programmation precedural (c avancée )
 
-#chapitre2
+# chapitre2
     c++ en tant que language de programmatio, orienté objet
-        ## Notion de class
-        ## Notion de constructeur / destructeur
+   ## 1- Notion de class
+   ## 2- Notion de constructeur / destructeur
