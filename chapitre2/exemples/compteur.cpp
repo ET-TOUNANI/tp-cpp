@@ -1,35 +1,26 @@
-// exemple compteur
-
 #include <iostream>
 #include <stdlib.h>
 #include <math.h>
 using namespace std;
-
-class Compteur
-{
+class Compteur{
     static int ctr;
-
 public:
     Compteur();
     ~Compteur();
 };
 int Compteur ::ctr = 0;
-Compteur ::Compteur()
-{
+Compteur ::Compteur(){
     cout << " un nouvel objet vient de sa créer " << endl;
     cout << " il y a maintenant : " << ++ctr << " objets ";
 }
-Compteur ::~Compteur()
-{
+Compteur ::~Compteur(){
     cout << " un objet vient de se détruire " << endl;
     cout << " il reste maintenant  : " << --ctr << " objets ";
 }
-void essai()
-{
+void essai(){
     Compteur u, v;
 }
-int main()
-{
+int main(){
     essai();
     Compteur a;
     essai();

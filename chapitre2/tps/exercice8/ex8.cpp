@@ -1,15 +1,10 @@
-// exercice 8
-
 #include <iostream>
 #include <stdlib.h>
 #include <math.h>
 using namespace std;
-
-class Complexe
-{
+class Complexe{
 private:
     double x, y;
-
 public:
     Complexe();
     Complexe(double, double);
@@ -20,30 +15,23 @@ public:
     double real() const;
     double img() const;
 };
-
-void Complexe::set(double a, double b)
-{
+void Complexe::set(double a, double b){
     x = a;
     y = b;
 }
-double Complexe::module()
-{
+double Complexe::module(){
     double res;
     res = sqrt(x * x + y * y);
     return res;
 }
-void Complexe::affiche()
-{
+void Complexe::affiche(){
     printf("%f  +   %f  i\n", x, y);
 }
-
-Complexe::Complexe(double a, double b)
-{
+Complexe::Complexe(double a, double b){
     x = a;
     y = b;
 }
-Complexe::Complexe(double a)
-{
+Complexe::Complexe(double a){
     x = a;
     y = 0;
 }

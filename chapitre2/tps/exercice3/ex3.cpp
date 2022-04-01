@@ -1,53 +1,40 @@
-// exercice 3
 #include <iostream>
 using namespace std;
-
-class Point
-{
+class Point{
     int x, y, couleur;
-
 public:
     Point();
     void deplacer(int, int);
     void afficher();
     void effacer();
 };
-Point::Point()
-{
+Point::Point(){
     x = 0;
     y = 0;
     couleur = 0;
 }
-void Point::deplacer(int dx, int dy)
-{
+void Point::deplacer(int dx, int dy){
     effacer();
     x = x + dx;
     y = y + dy;
     afficher();
 }
-
-void Point::afficher()
-{
+void Point::afficher(){
     cout << "je suis en " << x << " " << y << endl;
 }
-
-void Point::effacer()
-{
+void Point::effacer(){
     int aux = couleur;
     couleur = 2; // black
     afficher();
     couleur = 1;
 }
-void scene()
-{
+void scene(){
     Point u;
     u.afficher();
     u.deplacer(20, 40);
     u.effacer();
 }
-int main()
-{
+int main(){
     scene();
-
     return 0;
 }
