@@ -30,7 +30,7 @@ void Point::effacer(){
     couleur = 1;
 }
 void scene(){
-    Point u(10, 30, 1);
+    Point u(47, 3, 1);
     u.afficher();
     u.deplacer(20, 40);
     u.effacer();
