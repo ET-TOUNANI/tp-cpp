@@ -55,8 +55,8 @@ int main()
     vecteur v1(2.3, 5.4), v2(1.3, 2.2);
     v1.affiche();
     v2.affiche();
-    cout << "determinant est : " << v1.det(v2);
-    cout << "produit scalaire est : " << v1.prod_scal(v2);
+    cout << "determinant est : " << v1.det(v2) << endl;
+    cout << "produit scalaire est : " << v1.prod_scal(v2) << endl;
     vecteur v3;
     v3 = v1.somme(v2);
     v3.affiche();

@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 // La valeur de retour d'une fonction est un objet
 // Transmission par adresse
 class point
@@ -31,10 +30,11 @@ void point ::affiche()
     cout << "Le point est en " << x << " et "
          << " " << y << "\n";
 }
-void main()
+int main()
 {
     point a, b(1, 6);
     a = *b.symetrique();
     a.affiche();
     b.affiche();
+    return 0;
 }

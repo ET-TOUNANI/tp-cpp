@@ -23,11 +23,12 @@ public:
     }
     void affiche()
     {
-        cout << " je suis en " << x << " " << y;
+        cout << " je suis en " << x << " " << y << endl;
     }
     void affiche(char *message)
     {
         cout << message << endl;
+        cout << " je suis en " << x << " " << y << endl;
     }
 };
 

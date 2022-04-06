@@ -1,17 +1,14 @@
 #include <iostream>
 using namespace std;
-
 class vecteur
 {
     float x, y;
-
 public:
     vecteur(float, float);
     void homotethie(float);
     void affiche();
     float det(vecteur);
 };
-
 vecteur::vecteur(float abs = 0, float ord = 0)
 {
     x = abs;

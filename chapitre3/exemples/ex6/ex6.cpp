@@ -28,10 +28,11 @@ void point ::affiche()
     cout << "Le point est en " << x << " et "
          << " " << y << "\n";
 }
-void main()
+int main()
 {
     point a, b(1, 6);
     a = b.symetrique();
     a.affiche();
     b.affiche();
+    return 0;
 }

@@ -31,12 +31,13 @@ Point ::Point(int abs, int ord)
 }
 void Point ::affiche()
 {
-    cout << " je suis en " << x << " " << y;
+    cout << " je suis en " << x << " " << y << endl;
 }
 
 void Point ::affiche(char *message)
 {
     cout << message << endl;
+    cout << " je suis en " << x << " " << y << endl;
 }
 
 int main()
@@ -44,9 +45,9 @@ int main()
     Point a;
     a.affiche();
     Point b(5);
-    b.affiche("point b");
+    b.affiche(" point b ");
     Point c(3, 12);
-    c.affiche("point c");
+    c.affiche(" point c ");
 
     return 0;
 }
