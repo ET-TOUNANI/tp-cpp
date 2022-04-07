@@ -9,3 +9,5 @@
     c++ en tant que language de programmation orienté objet( Notion de class,  Notion objet ...)
 # chapitre 3
     fonction en ligne + this + passage par (addresse + valeur + reference ) 
+# chapitre 4
+    constructeur par recopier , les types d'objets , objet d'objet
