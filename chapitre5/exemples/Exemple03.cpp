@@ -4,7 +4,6 @@ class liste
 {
 	int taille;
 	float *adr;
-
 public:
 	liste(int);
 	liste(liste &);
@@ -23,7 +22,6 @@ liste::liste(int t)
 }
 liste::liste(liste &v)
 {
-
 	taille = v.taille;
 	adr = new float[taille];
 	for (int i = 0; i < taille; i++)

@@ -3,7 +3,6 @@ using namespace std;
 class vecteur
 {
 	float x, y;
-
 public:
 	vecteur(float, float);
 	void afficher();
@@ -42,6 +41,5 @@ int main()
 	cout << " ) et vecteur B: (";
 	b.afficher();
 	cout << ") est  " << f;
-
 	return 1;
 }

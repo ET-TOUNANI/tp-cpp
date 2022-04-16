@@ -3,13 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 using namespace std;
-
 class chaine
 {
-
     int l;
     char *adr;
-
 public:
     chaine()
     {
@@ -26,7 +23,6 @@ public:
     char operator[](int i);
     void afficher();
 };
-
 chaine::chaine(char *t)
 {
     l = strlen(t);
@@ -45,14 +41,12 @@ chaine chaine::operator=(char *cp)
     strcpy(c.adr, cp);
     return c;
 }
-
 bool chaine::operator==(char *t)
 {
     if (strcmp(adr, t))
         return true;
     return false;
 }
-
 chaine chaine::operator+(char *b)
 {
     chaine c;
@@ -60,7 +54,6 @@ chaine chaine::operator+(char *b)
     c.l = strlen(b) + l;
     return c;
 }
-
 char chaine::operator[](int i)
 {
     return adr[i];
@@ -79,12 +72,10 @@ int main()
     char *test2 = (char *)"hello";
     chaine a(test);
     chaine b(test2);
-
     if (a.operator==(b.getChaine()))
         printf("oui \n");
     else
         printf("non \n");
-
     chaine c;
     c = a.operator+(b.getChaine());
     c.afficher();
